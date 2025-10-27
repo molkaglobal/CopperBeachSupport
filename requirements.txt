@@ -1,0 +1,23 @@
+# ============================================================================
+# FAIRE TO HELM SYNC - PYTHON DEPENDENCIES
+# ============================================================================
+#
+# Install all dependencies with:
+#   pip install -r requirements.txt
+#
+# For production deployment (Cloud Run):
+#   These will be automatically installed via Dockerfile
+#
+# ============================================================================
+
+# HTTP Requests Library
+# Used for making API calls to Faire and Helm
+requests==2.31.0
+
+# Google Cloud Firestore
+# Used for tracking last sync time between runs
+google-cloud-firestore==2.14.0
+
+# Python Environment Variables (for local development only)
+# Loads .env file for testing
+python-dotenv==1.0.0
